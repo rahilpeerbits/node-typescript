@@ -22,7 +22,7 @@ if (db) {
 // Body parser for POST params
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.raw());
 // app.use(multer);  // For File Upload
 
 // Routes
