@@ -3,6 +3,7 @@ import { connect } from "./config/db";
 import { config } from "./config/config";
 import version from "./v1/route";
 import multer from "multer";
+import { error as resError } from "./helper/responseH";
 
 const app = express();
 const port = config.APP_PORT;
@@ -27,6 +28,18 @@ app.use(express.raw());
 
 // Routes
 app.use("/v1", version);
+
+// Centralized error handler
+app.use((err: any, req: any, res: any, next: any) => {
+  // Joi error handler for json response
+  if (err && err.error && err.error.isJoi) {
+    return res
+      .status(400)
+      .json(resError(err.error.toString(), 400, err.error?.details));
+  } else {
+    next(err);
+  }
+});
 
 // Default Route for index page
 app.get("/", (req, res) => {
