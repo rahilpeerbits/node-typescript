@@ -45,3 +45,5 @@ app.use((err: any, req: any, res: any, next: any) => {
 app.get("/", (req, res) => {
   res.send("App working");
 });
+
+export default app;

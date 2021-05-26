@@ -81,3 +81,9 @@
 2021-05-26 16:09:56:956 [31merror[39m: [31mInvalid token[39m
 2021-05-26 16:22:04:224 [31merror[39m: [31mToken not available[39m
 2021-05-26 16:22:12:2212 [31merror[39m: [31mInvalid token[39m
+2021-05-26 18:26:24:2624 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:32:26:3226 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:33:19:3319 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:33:49:3349 [31merror[39m: [31mValidationError: "email" must be a valid email[39m
+2021-05-26 18:34:41:3441 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:35:17:3517 [31merror[39m: [31mEmail already in use[39m

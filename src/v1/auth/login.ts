@@ -22,7 +22,9 @@ export const login: RequestHandler = (req, res) => {
       return res.status(404).send(resError("User not exist", 404));
     }
     if (userData.password === CryptoJS.MD5(req.body.password).toString()) {
-      const token = JWT.sign({ userData }, config.JWT_KEY);
+      const token = JWT.sign({ userData }, config.JWT_KEY, {
+        expiresIn: 60 * 60 * parseInt(config.JWT_EXPIRE_HOURS, 10),
+      });
       return res.status(200).send(
         resSuccess("Login Successful", 200, {
           token,
