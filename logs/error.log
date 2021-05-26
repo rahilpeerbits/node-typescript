@@ -41,3 +41,43 @@
 2021-05-26 12:31:53:3153 [31merror[39m: [31mThis is an error log[39m
 2021-05-26 12:35:06:356 [31merror[39m: [31mValidationError: "firstName" is required. "lastName" is required. "firstName1" is not allowed. "lastName1" is not allowed[39m
 2021-05-26 12:35:06:356 [31merror[39m: [31mValidationError: "firstName" is required. "lastName" is required. "firstName1" is not allowed. "lastName1" is not allowed[39m
+2021-05-26 13:42:48:4248 [31merror[39m: [31mValidationError: "firstName" is required. "lastName" is required. "firstName1" is not allowed. "lastName1" is not allowed[39m
+2021-05-26 13:49:54:4954 [31merror[39m: [31mValidationError: "password" must be a string[39m
+2021-05-26 14:43:50:4350 [31merror[39m: [31mUser not found[39m
+2021-05-26 14:48:33:4833 [31merror[39m: [31mValidationError: "firstName" is required. "lastName" is required[39m
+2021-05-26 15:14:14:1414 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:14:18:1418 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:14:22:1422 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:15:55:1555 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:16:06:166 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:16:40:1640 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:16:47:1647 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:17:48:1748 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:17:51:1751 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:18:25:1825 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:18:28:1828 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:18:35:1835 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:20:46:2046 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:20:52:2052 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:20:53:2053 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 15:21:00:210 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 16:00:55:055 [31merror[39m: [31mInvalid token[39m
+2021-05-26 16:01:00:10 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:01:03:13 [31merror[39m: [31mInvalid token[39m
+2021-05-26 16:01:17:117 [31merror[39m: [31mInvalid token[39m
+2021-05-26 16:02:12:212 [31merror[39m: [31mInvalid token[39m
+2021-05-26 16:05:42:542 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:45:545 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:46:546 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:47:547 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:57:557 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:58:558 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:05:59:559 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:06:16:616 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:06:17:617 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:06:37:637 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:07:27:727 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:07:43:743 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:09:56:956 [31merror[39m: [31mInvalid token[39m
+2021-05-26 16:22:04:224 [31merror[39m: [31mToken not available[39m
+2021-05-26 16:22:12:2212 [31merror[39m: [31mInvalid token[39m
