@@ -4,6 +4,8 @@ import { config } from "./config/config";
 import version from "./v1/route";
 import multer from "multer";
 import { error as resError } from "./helper/responseH";
+import path from "path";
+import { v4 as uuidv4 } from "uuid";
 
 const app = express();
 const port = config.APP_PORT;
@@ -24,7 +26,17 @@ if (db) {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.raw());
-// app.use(multer);  // For File Upload
+
+// For File Upload
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, config.UPLOAD_PATH);
+  },
+  filename: (req, file, cb) => {
+    cb(null, uuidv4() + path.extname(file.originalname));
+  },
+});
+app.use(multer({ storage }).single("file"));
 
 // Routes
 app.use("/v1", version);

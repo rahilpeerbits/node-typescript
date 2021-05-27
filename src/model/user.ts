@@ -5,6 +5,7 @@ const UserSchema: Schema = new Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   password: { type: String, required: true },
+  image: { type: String, required: false },
 });
 
 interface IUser {
@@ -12,6 +13,7 @@ interface IUser {
   firstName: string;
   lastName: string;
   password: string;
+  image: string;
 }
 
 export default mongoose.model<IUser>("User", UserSchema);

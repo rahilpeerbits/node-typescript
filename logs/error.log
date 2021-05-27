@@ -101,3 +101,6 @@
 2021-05-26 19:05:49:549 [31merror[39m: [31mUser not exist[39m
 2021-05-26 19:06:38:638 [31merror[39m: [31mUser not exist[39m
 2021-05-26 19:08:38:838 [31merror[39m: [31mUser not exist[39m
+2021-05-27 11:34:20:3420 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
+2021-05-27 11:34:38:3438 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
+2021-05-27 11:34:46:3446 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m

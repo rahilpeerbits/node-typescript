@@ -22,11 +22,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/images
 
 # System Files
 .DS_Store
 Thumbs.db
 .env
-
-#logs
-/logs
