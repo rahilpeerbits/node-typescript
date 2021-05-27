@@ -5,5 +5,9 @@ import {
 } from "../../helper/responseH";
 
 export const fileUpload: RequestHandler = (req, res) => {
-  return res.status(200).json(resSuccess("File uploded", 200, req.file));
+  if (req.file) {
+    return res.status(200).json(resSuccess("File uploded", 200, req.file));
+  } else {
+    return res.status(404).json(resError("File not found", 404));
+  }
 };

@@ -104,3 +104,5 @@
 2021-05-27 11:34:20:3420 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
 2021-05-27 11:34:38:3438 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
 2021-05-27 11:34:46:3446 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
+2021-05-27 12:11:18:1118 [31merror[39m: [31mFile not fount[39m
+2021-05-27 12:11:35:1135 [31merror[39m: [31mFile not found[39m
