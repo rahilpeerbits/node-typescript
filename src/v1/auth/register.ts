@@ -16,6 +16,7 @@ export const register: RequestHandler = async (req, res) => {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     password: CryptoJS.MD5(req.body.password),
+    image: req.body.image,
   });
   if (u.save()) {
     return res.status(200).send(resSuccess("User created", 200));
@@ -28,4 +29,5 @@ export const validatonHandler = Joi.object({
   password: Joi.string().min(3).max(20).required(),
   firstName: Joi.string().min(3).max(20).required(),
   lastName: Joi.string().min(3).max(20).required(),
+  image: Joi.string().min(3).required(),
 });

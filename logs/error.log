@@ -106,3 +106,7 @@
 2021-05-27 11:34:46:3446 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required[39m
 2021-05-27 12:11:18:1118 [31merror[39m: [31mFile not fount[39m
 2021-05-27 12:11:35:1135 [31merror[39m: [31mFile not found[39m
+2021-05-27 12:14:08:148 [31merror[39m: [31mValidationError: "image" is not allowed[39m
+2021-05-27 12:15:00:150 [31merror[39m: [31mValidationError: "image" length must be less than or equal to 20 characters long[39m
+2021-05-27 12:15:02:152 [31merror[39m: [31mValidationError: "image" length must be less than or equal to 20 characters long[39m
+2021-05-27 12:15:19:1519 [31merror[39m: [31mEmail already in use[39m
