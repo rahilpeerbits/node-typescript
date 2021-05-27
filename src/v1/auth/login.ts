@@ -25,6 +25,11 @@ export const login: RequestHandler = (req, res) => {
       const token = JWT.sign({ userData }, config.JWT_KEY, {
         expiresIn: 60 * 60 * parseInt(config.JWT_EXPIRE_HOURS, 10),
       });
+
+      // if (userData.verified === false) {
+      //   return res.status(401).send(resError("User email not verified", 401));
+      // }
+
       return res.status(200).send(
         resSuccess("Login Successful", 200, {
           token,

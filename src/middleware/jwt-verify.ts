@@ -2,6 +2,7 @@ import { NextFunction, Request, RequestHandler, Response } from "express";
 import JWT from "jsonwebtoken";
 import { config } from "../config/config";
 import { error as resError } from "../helper/responseH";
+import user from "../model/user";
 
 /**
  * This router wrapper catches any error from async await
@@ -14,12 +15,15 @@ const jwtVerify = (req: any, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;
 
   if (authHeader) {
-    JWT.verify(authHeader, config.JWT_KEY, (err: any, user: any) => {
+    JWT.verify(authHeader, config.JWT_KEY, async (err: any, userD: any) => {
       if (err) {
         return res.status(401).send(resError("Invalid token", 401));
       }
-
-      req.body.user = user.userData;
+      const vuser = await user.findOne({ email: userD.userData.email });
+      if (vuser && vuser.verified === false) {
+        return res.status(401).send(resError("User email not verified", 401));
+      }
+      req.body.user = userD.userData;
       next();
     });
   } else {

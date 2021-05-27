@@ -115,3 +115,9 @@
 2021-05-27 13:18:36:1836 [31merror[39m: [31mEmail already in use[39m
 2021-05-27 13:24:45:2445 [31merror[39m: [31mEmail already in use[39m
 2021-05-27 13:26:53:2653 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:39:27:3927 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:45:28:4528 [31merror[39m: [31mUser email not verified[39m
+2021-05-27 14:51:45:5145 [31merror[39m: [31mUser email not verified[39m
+2021-05-27 15:07:42:742 [31merror[39m: [31mValidationError: "email" is required. "password" is required. "firstName" is required. "lastName" is required. "image" is required[39m
+2021-05-27 15:14:52:1452 [31merror[39m: [31mInvalid token[39m
+2021-05-27 15:14:53:1453 [31merror[39m: [31mInvalid token[39m

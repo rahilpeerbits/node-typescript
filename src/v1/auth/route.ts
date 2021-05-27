@@ -5,6 +5,7 @@ import {
   register,
   validatonHandler as registerValidatonHandler,
 } from "./register";
+import { verifyEmail } from "./verifyEmail";
 import { createValidator } from "express-joi-validation";
 
 const router = Router();
@@ -20,5 +21,6 @@ router.post(
   validator.body(registerValidatonHandler),
   handleError(register)
 );
+router.get("/verify-email", handleError(verifyEmail));
 
 export default router;
