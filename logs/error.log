@@ -87,3 +87,17 @@
 2021-05-26 18:33:49:3349 [31merror[39m: [31mValidationError: "email" must be a valid email[39m
 2021-05-26 18:34:41:3441 [31merror[39m: [31mUser not exist[39m
 2021-05-26 18:35:17:3517 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 18:51:44:5144 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:52:07:527 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 18:52:07:527 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:53:28:5328 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:53:28:5328 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 18:54:09:549 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:55:37:5537 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:56:18:5618 [31merror[39m: [31mUser not exist[39m
+2021-05-26 18:57:03:573 [31merror[39m: [31mUser not exist[39m
+2021-05-26 19:00:52:052 [31merror[39m: [31mUser not exist[39m
+2021-05-26 19:05:49:549 [31merror[39m: [31mEmail already in use[39m
+2021-05-26 19:05:49:549 [31merror[39m: [31mUser not exist[39m
+2021-05-26 19:06:38:638 [31merror[39m: [31mUser not exist[39m
+2021-05-26 19:08:38:838 [31merror[39m: [31mUser not exist[39m
