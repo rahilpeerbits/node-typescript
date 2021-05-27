@@ -22,7 +22,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/images
+/uploads
 
 # System Files
 .DS_Store

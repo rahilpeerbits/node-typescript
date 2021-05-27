@@ -110,3 +110,8 @@
 2021-05-27 12:15:00:150 [31merror[39m: [31mValidationError: "image" length must be less than or equal to 20 characters long[39m
 2021-05-27 12:15:02:152 [31merror[39m: [31mValidationError: "image" length must be less than or equal to 20 characters long[39m
 2021-05-27 12:15:19:1519 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:09:32:932 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:11:50:1150 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:18:36:1836 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:24:45:2445 [31merror[39m: [31mEmail already in use[39m
+2021-05-27 13:26:53:2653 [31merror[39m: [31mEmail already in use[39m

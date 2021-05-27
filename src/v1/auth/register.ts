@@ -2,6 +2,7 @@ import { RequestHandler, Router } from "express";
 import user from "../../model/user";
 import CryptoJS from "crypto-js";
 import Joi from "joi";
+import mail from "../../helper/sendmail";
 import {
   success as resSuccess,
   error as resError,
@@ -19,6 +20,7 @@ export const register: RequestHandler = async (req, res) => {
     image: req.body.image,
   });
   if (u.save()) {
+    mail(req.body.email, "Registration success", "Registration success");
     return res.status(200).send(resSuccess("User created", 200));
   }
   return res.status(500).send(resError("Unable to create user", 500));

@@ -40,6 +40,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/lodash": "^4.14.170",
+    "@types/nodemailer": "^6.4.2",
     "@types/uuid": "^8.3.0",
     "crypto-js": "^4.0.0",
     "dotenv": "^10.0.0",
@@ -51,6 +52,7 @@
     "lodash": "^4.17.21",
     "mongoose": "^5.12.11",
     "multer": "^1.4.2",
+    "nodemailer": "^6.6.1",
     "uuid": "^8.3.2",
     "winston": "^3.3.3"
   }
