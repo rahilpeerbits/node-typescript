@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.23",
     "@types/mongoose": "^5.10.5",
@@ -42,6 +43,7 @@
     "@types/lodash": "^4.14.170",
     "@types/nodemailer": "^6.4.2",
     "@types/uuid": "^8.3.0",
+    "cors": "^2.8.5",
     "crypto-js": "^4.0.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",

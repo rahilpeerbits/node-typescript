@@ -6,8 +6,17 @@ import multer from "multer";
 import { error as resError } from "./helper/responseH";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
+import cors from "cors";
 
 const app = express();
+
+const options = {
+  origin: "http://localhost",
+  credentials: true,
+};
+
+app.use(cors(options));
+
 const port = config.APP_PORT;
 
 // DB connection
