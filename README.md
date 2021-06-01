@@ -1,3 +1,5 @@
+![Image of Node + TS + Mongo + Express](https://i.ibb.co/mNr2CX4/image.png)
+
 # Node Typescript and MongoDB Structure
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/rahilpeerbits/node-typescript/master)
