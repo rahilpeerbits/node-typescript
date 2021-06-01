@@ -2,6 +2,30 @@
 
 Multipurpose project structure for node application.
 
+## Usage
+
+```bash
+git clone https://github.com/rahilpeerbits/node-typescript.git
+```
+
+```bash
+cd node-typescript
+```
+
+```bash
+npm install
+```
+
+```bash
+cp .env.example .env
+```
+
+###### Note: Update .env with your DB string and JWT key
+
+```bash
+npm start
+```
+
 ## Important commands
 
 Install dependencies
