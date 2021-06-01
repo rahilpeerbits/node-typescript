@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/stargazers)
 [![GitHub license](https://img.shields.io/github/license/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/blob/master/LICENSE)
 
-![Image of Node + TS + Mongo + Express](https://i.ibb.co/nLYpZFw/68747470733a2f2f692e6962622e636f2f6d4e72324358342f696d6167652e706e67-1.png)
+![Image of Node + TS + Mongo + Express](https://i.ibb.co/P6Pk3dr/68747470733a2f2f692e6962622e636f2f6d4e72324358342f696d6167652e706e67-1.png)
 
 Multipurpose project structure for node application.
 
