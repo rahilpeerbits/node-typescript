@@ -2,7 +2,33 @@
 
 Multipurpose project structure for node application.
 
-## Integrated libraries
+## Important commands
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run
+
+```bash
+npm start
+```
+
+Test
+
+```bash
+npm test
+```
+
+Build
+
+```bash
+npm build
+```
+
+## Libraries
 
 - Mongoose
 - Express
