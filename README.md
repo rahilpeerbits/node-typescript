@@ -63,22 +63,22 @@ npm build
 
 ## Libraries
 
-- Mongoose
-- Express
-- Node mailer
-- JWT
-- Socket.io
-- Husky
-- CORS
-- UUID
-- JOI Validation
-- Lodash
-- CryptoJs
-- Multer
-- Winston
-- Nodemon
-- Jest
-- Prettier
+- [Mongoose](https://www.npmjs.com/package/mongoose)
+- [Express](https://www.npmjs.com/package/express)
+- [Node mailer](https://www.npmjs.com/package/nodemailer)
+- [JWT](https://www.npmjs.com/package/jsonwebtoken)
+- [Socket.io](https://www.npmjs.com/package/socket.io)
+- [Husky](https://www.npmjs.com/package/husky)
+- [CORS](https://www.npmjs.com/package/cors)
+- [UUID](https://www.npmjs.com/package/uuid)
+- [JOI Validation](https://www.npmjs.com/package/joi)
+- [Lodash](https://www.npmjs.com/package/lodash)
+- [CryptoJs](https://www.npmjs.com/package/crypto-js)
+- [Multer](https://www.npmjs.com/package/multer)
+- [Winston](https://www.npmjs.com/package/winston)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Jest](https://www.npmjs.com/package/jest)
+- [Prettier](https://www.npmjs.com/package/prettier)
 
 ## File Structure
 
