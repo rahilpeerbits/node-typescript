@@ -1,5 +1,3 @@
-![Image of Node + TS + Mongo + Express](https://i.ibb.co/mNr2CX4/image.png)
-
 # Node Typescript and MongoDB Structure
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/rahilpeerbits/node-typescript/master)
@@ -7,6 +5,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/network)
 [![GitHub stars](https://img.shields.io/github/stars/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/stargazers)
 [![GitHub license](https://img.shields.io/github/license/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/blob/master/LICENSE)
+
+![Image of Node + TS + Mongo + Express](https://i.ibb.co/mNr2CX4/image.png)
 
 Multipurpose project structure for node application.
 
