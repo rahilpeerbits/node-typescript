@@ -7,6 +7,11 @@ import { error as resError } from "./helper/responseH";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
 import cors from "cors";
+import { createServer } from "http";
+import { Server, Socket } from "socket.io";
+import JWT from "jsonwebtoken";
+import user from "./model/user";
+import * as _ from "lodash";
 
 const app = express();
 
@@ -66,5 +71,48 @@ app.use((err: any, req: any, res: any, next: any) => {
 app.get("/", (req, res) => {
   res.send("App working");
 });
+
+// Socket Server
+const httpServer = createServer();
+const io = new Server(httpServer, {
+  path: "/socket.io",
+  transports: ["polling"],
+  cors: {
+    origin: "http://localhost",
+    credentials: true,
+  },
+});
+
+// Socket Middleware
+io.use((socket, next) => {
+  const authHeader = socket.handshake.headers.authorization;
+
+  if (authHeader) {
+    JWT.verify(authHeader, config.JWT_KEY, async (err: any, userD: any) => {
+      if (err) {
+        return new Error("Invalid token");
+      }
+      const vuser = await user.findOne({ email: userD.userData.email });
+      if (vuser && vuser.verified === false) {
+        return new Error("User email not verified");
+      }
+      socket.handshake.query = { user: userD.userData };
+      next();
+    });
+  } else {
+    return new Error("Token not available");
+  }
+});
+
+// Handle socket connection
+io.on("connection", (socket) => {
+  socket.on("msg", (msg) => {
+    console.log("Socket connected", socket.id);
+    console.log(socket.handshake.query.user);
+    console.log(msg);
+  });
+});
+
+httpServer.listen(3100);
 
 export default app;
