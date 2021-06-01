@@ -79,41 +79,42 @@ npm build
 
 ## File Structure
 
+```
 ├─ .github
-│ └─ workflows
-│ └─ deploy.yaml
+│  └─ workflows
+│     └─ deploy.yaml
 ├─ .husky
-│ ├─ .gitignore
-│ └─ pre-commit
+│  ├─ .gitignore
+│  └─ pre-commit
 ├─ src
-│ ├─ config
-│ │ ├─ config.ts
-│ │ ├─ db.ts
-│ │ └─ logger.ts
-│ ├─ helper
-│ │ ├─ responseH.ts
-│ │ └─ sendmail.ts
-│ ├─ middleware
-│ │ ├─ handle-error.ts
-│ │ └─ jwt-verify.ts
-│ ├─ model
-│ │ └─ user.ts
-│ ├─ v1
-│ │ ├─ auth
-│ │ │ ├─ auth.spec.ts
-│ │ │ ├─ login.ts
-│ │ │ ├─ register.ts
-│ │ │ ├─ route.ts
-│ │ │ └─ verifyEmail.ts
-│ │ ├─ user
-│ │ │ ├─ profile.spec.ts
-│ │ │ ├─ profile.ts
-│ │ │ └─ route.ts
-│ │ ├─ util
-│ │ │ ├─ fileUpload.ts
-│ │ │ └─ route.ts
-│ │ └─ route.ts
-│ └─ app.ts
+│  ├─ config
+│  │  ├─ config.ts
+│  │  ├─ db.ts
+│  │  └─ logger.ts
+│  ├─ helper
+│  │  ├─ responseH.ts
+│  │  └─ sendmail.ts
+│  ├─ middleware
+│  │  ├─ handle-error.ts
+│  │  └─ jwt-verify.ts
+│  ├─ model
+│  │  └─ user.ts
+│  ├─ v1
+│  │  ├─ auth
+│  │  │  ├─ auth.spec.ts
+│  │  │  ├─ login.ts
+│  │  │  ├─ register.ts
+│  │  │  ├─ route.ts
+│  │  │  └─ verifyEmail.ts
+│  │  ├─ user
+│  │  │  ├─ profile.spec.ts
+│  │  │  ├─ profile.ts
+│  │  │  └─ route.ts
+│  │  ├─ util
+│  │  │  ├─ fileUpload.ts
+│  │  │  └─ route.ts
+│  │  └─ route.ts
+│  └─ app.ts
 ├─ .env.example
 ├─ .gitignore
 ├─ LICENSE
@@ -123,3 +124,4 @@ npm build
 ├─ package.json
 ├─ tsconfig.json
 └─ tslint.json
+```
