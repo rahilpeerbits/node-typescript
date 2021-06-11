@@ -1,4 +1,4 @@
-# Node Typescript and MongoDB Structure
+# Node Typescript and MongoDB Structures
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/rahilpeerbits/node-typescript/master)
 [![GitHub issues](https://img.shields.io/github/issues/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/issues)
