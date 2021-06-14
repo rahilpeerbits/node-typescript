@@ -1,6 +1,5 @@
 # Node Typescript and MongoDB Structure
 
-![Build](https://github.com/rahilpeerbits/node-typescript/actions/workflows/node.js.yaml/badge.svg)
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/rahilpeerbits/node-typescript/master)
 [![GitHub issues](https://img.shields.io/github/issues/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/issues)
 [![GitHub forks](https://img.shields.io/github/forks/rahilpeerbits/node-typescript)](https://github.com/rahilpeerbits/node-typescript/network)
