@@ -78,6 +78,7 @@ npm build
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Jest](https://www.npmjs.com/package/jest)
 - [Prettier](https://www.npmjs.com/package/prettier)
+- [FCM](https://www.npmjs.com/package/firebase-admin)
 
 ## File Structure
 
