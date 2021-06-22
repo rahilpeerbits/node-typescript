@@ -29,3 +29,5 @@ testem.log
 .DS_Store
 Thumbs.db
 .env
+
+test-xyyftf-firebase-adminsdk.json
