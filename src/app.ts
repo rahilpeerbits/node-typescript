@@ -42,6 +42,7 @@ if (db) {
       }
       cluster.on("exit", (worker, code, signal) => {
         console.log(`process died ${worker.process.pid}`);
+        cluster.fork();
       });
     } else {
       app.listen(port, () => {
