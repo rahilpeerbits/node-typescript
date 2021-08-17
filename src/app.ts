@@ -12,8 +12,12 @@ import { Server, Socket } from "socket.io";
 import JWT from "jsonwebtoken";
 import user from "./model/user";
 import * as _ from "lodash";
+import cluster from "cluster";
+import os from "os";
+import net from "net";
 
 const app = express();
+const numCpu = os.cpus().length;
 
 const options = {
   origin: "http://localhost",
@@ -30,9 +34,22 @@ const db = connect();
 if (db) {
   db.once("open", async () => {
     console.log("Connected to database");
-    app.listen(port, () => {
-      return console.log(`server is listening on ${port}`);
-    });
+
+    // Implement cluster for Zero down time and utilize multiple CPU on same port with different pid
+    if (cluster.isMaster) {
+      for (let i = 0; i < numCpu; i++) {
+        cluster.fork();
+      }
+      cluster.on("exit", (worker, code, signal) => {
+        console.log(`process died ${worker.process.pid}`);
+      });
+    } else {
+      app.listen(port, () => {
+        return console.log(
+          `server is listening on ${port} process ${process.pid}`
+        );
+      });
+    }
   });
 }
 
@@ -113,6 +130,26 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(3100);
+// Check is port number is alreay in use
+const isPortFree = (sPort: number) => {
+  return new Promise((resolve) => {
+    const server = require("http")
+      .createServer()
+      .listen(sPort, () => {
+        server.close();
+        resolve(true);
+      })
+      .on("error", () => {
+        resolve(false);
+      });
+  });
+};
+
+// If given port is free then only start socket server
+isPortFree(3200).then((res: any) => {
+  if (res) {
+    httpServer.listen(3200);
+  }
+});
 
 export default app;
