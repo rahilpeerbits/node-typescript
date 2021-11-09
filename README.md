@@ -8,7 +8,7 @@
 
 ![Image of Node + TS + Mongo + Express](https://i.ibb.co/P6Pk3dr/68747470733a2f2f692e6962622e636f2f6d4e72324358342f696d6167652e706e67-1.png)
 
-Multipurpose project structure for node and mongodb application.
+Multipurpose project structure for node and mongodb application. 
 
 ## Usage
 
